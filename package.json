@@ -1,0 +1,30 @@
+{
+  "name": "node-product-catalog-feed",
+  "version": "0.1.0",
+  "description": "A framework to generate product catalog feed according to Google Merchant Product Data Deed specification and Facebook Business Product Data Catalog Feed.",
+  "main": "index.js",
+  "homepage": "https://github.com/alx17/node-product-catalog-feed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alx17/node-product-catalog-feed.git"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "./node_modules/.bin/eslint lib/**.js"
+  },
+  "author": "Alexander Yefanov <alexander@efanov.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "xmlbuilder": "^10.0.0"
+  },
+  "engines": {
+    "npm": ">=4.0.0",
+    "node": ">=6.0.0"
+  }
+}
