@@ -1,6 +1,6 @@
 # node-product-catalog-feed
 
-A framework to generate product catalog feed according to Google Merchant Product Data Deed specification and Facebook Business Product Data Catalog Feed.
+A framework to generate product catalog feed according to [Google Merchant Product Data Feed](https://support.google.com/merchants/answer/7052112) specification and [Facebook Business Product Data Catalog RSS XML Feed](https://developers.facebook.com/docs/marketing-api/dynamic-product-ads/product-catalog#feed-format).
 
 [![Build Status](https://travis-ci.org/alx17/node-product-catalog-feed.svg?branch=master)](https://travis-ci.org/alx17/node-product-catalog-feed)
 
@@ -44,8 +44,8 @@ const xml = new FeedBuilder()
   .withProduct(modelS)
   .buildXml();
 ```
+The following XML document is generated.
 
-### Generated feed example
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
