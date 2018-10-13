@@ -1,6 +1,6 @@
 {
   "name": "node-product-catalog-feed",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A framework to generate product catalog feed according to Google Merchant Product Data Deed specification and Facebook Business Product Data Catalog Feed.",
   "main": "index.js",
   "homepage": "https://github.com/alx17/node-product-catalog-feed",
