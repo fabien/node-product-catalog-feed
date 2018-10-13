@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+  <channel>
+    <title>Cars</title>
+    <link>https://www.example.com</link>
+    <description>My cars</description>
+    <item>
+      <g:id>id-model-x</g:id>
+      <title>Model X</title>
+      <g:availability>preorder</g:availability>
+      <g:price>71300.00 USD</g:price>
+      <g:brand>Tesla</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>id-model-s</g:id>
+      <title>Model S</title>
+      <g:availability>in stock</g:availability>
+      <g:price>65200.00 USD</g:price>
+      <g:brand>Tesla</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+  </channel>
+</rss>
