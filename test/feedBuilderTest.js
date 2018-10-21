@@ -118,12 +118,6 @@ describe('XML feed generation', function () {
     product1.minHandlingTime = 1;
     product1.maxHandlingTime = 3;
 
-    const product2 = new Product();
-    product2.id = 200;
-    product2.title = 'Sample title 2';
-    product2.price = new ProductPrice(9.99, 'eur');
-    product2.googleProductCategory = 'Apparel & Accessories > Clothing > Dresses';
-
     const product1Tax1 = new ProductTax();
     product1Tax1.country = 'US';
     product1Tax1.region = 'MA';
@@ -138,6 +132,13 @@ describe('XML feed generation', function () {
 
     product1.tax = [product1Tax1, product1Tax2];
     product1.taxCategory = 'apparel';
+
+    const product2 = new Product();
+    product2.id = 200;
+    product2.title = 'Sample title 2';
+    product2.price = new ProductPrice(9.99, 'eur');
+    product2.googleProductCategory = 'Apparel & Accessories > Clothing > Dresses';
+    product2.additionalImageLink = ['http://www.example.com/image0.jpg', 'http://www.example.com/image1.jpg'];
 
     const product2Shipping1 = new ProductShipping(new ProductPrice(1.99, 'EUR'));
     product2Shipping1.country = 'DE';

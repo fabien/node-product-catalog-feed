@@ -96,6 +96,8 @@
     <item>
       <g:id>200</g:id>
       <title>Sample title 2</title>
+      <g:additional_image_link>http://www.example.com/image0.jpg</g:additional_image_link>
+      <g:additional_image_link>http://www.example.com/image1.jpg</g:additional_image_link>
       <g:price>9.99 EUR</g:price>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Dresses</g:google_product_category>
       <g:shipping>
