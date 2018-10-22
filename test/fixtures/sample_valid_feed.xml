@@ -100,6 +100,8 @@
       <g:additional_image_link>http://www.example.com/image1.jpg</g:additional_image_link>
       <g:price>9.99 EUR</g:price>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Dresses</g:google_product_category>
+      <g:product_type>category 1</g:product_type>
+      <g:product_type>category 2</g:product_type>
       <g:shipping>
         <g:country>DE</g:country>
         <g:region>Berlin</g:region>

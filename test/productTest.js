@@ -135,4 +135,124 @@ describe('Product arguments validation', () => {
 
     assert.instanceOf(actual.unitPricingBaseMeasure, UnitPricingMeasure);
   });
+
+  it('installment throws when assigned an instance of incompatible object.', () => {
+    const actual = new Product();
+
+    assert.throws(() => {
+      actual.installment = new Object();
+    }, Error);
+  });
+
+  it('installment accepts when assigned an instance of ProductInstallment.', () => {
+    const actual = new Product();
+    actual.installment = new ProductInstallment(6, new ProductPrice(10, 'EUR'));
+
+    assert.instanceOf(actual.installment, ProductInstallment);
+  });
+
+  it('loyaltyPoints throws when assigned an instance of incompatible object.', () => {
+    const actual = new Product();
+
+    assert.throws(() => {
+      actual.loyaltyPoints = new Object();
+    }, Error);
+  });
+
+  it('loyaltyPoints accepts when assigned an instance of ProductLoyaltyPoints.', () => {
+    const actual = new Product();
+    actual.loyaltyPoints = new ProductLoyaltyPoints('BTC', 10, .8);
+
+    assert.instanceOf(actual.loyaltyPoints, ProductLoyaltyPoints);
+  });
+
+  it('shipping throws when assigned an instance of incompatible object.', () => {
+    const actual = new Product();
+
+    assert.throws(() => {
+      actual.shipping = new Object();
+    }, Error);
+  });
+
+  it('shipping accepts when assigned an instance of ProductShipping.', () => {
+    const actual = new Product();
+    actual.shipping = new ProductShipping(new ProductPrice(10, 'EUR'));
+
+    assert.instanceOf(actual.shipping, ProductShipping);
+  });
+
+  it('shippingWeight throws when assigned an instance of incompatible object.', () => {
+    const actual = new Product();
+
+    assert.throws(() => {
+      actual.shippingWeight = new Object();
+    }, Error);
+  });
+
+  it('shippingWeight accepts when assigned an instance of ShippingWeight.', () => {
+    const actual = new Product();
+    actual.shippingWeight = new ShippingWeight(20, 'kg');
+
+    assert.instanceOf(actual.shippingWeight, ShippingWeight);
+  });
+
+  it('shippingLength throws when assigned an instance of incompatible object.', () => {
+    const actual = new Product();
+
+    assert.throws(() => {
+      actual.shippingLength = new Object();
+    }, Error);
+  });
+
+  it('shippingLength accepts when assigned an instance of ShippingDimension.', () => {
+    const actual = new Product();
+    actual.shippingLength = new ShippingDimension(250, 'cm');
+
+    assert.instanceOf(actual.shippingLength, ShippingDimension);
+  });
+
+  it('shippingWidth throws when assigned an instance of incompatible object.', () => {
+    const actual = new Product();
+
+    assert.throws(() => {
+      actual.shippingWidth = new Object();
+    }, Error);
+  });
+
+  it('shippingWidth accepts when assigned an instance of ShippingDimension.', () => {
+    const actual = new Product();
+    actual.shippingWidth = new ShippingDimension(250, 'cm');
+
+    assert.instanceOf(actual.shippingWidth, ShippingDimension);
+  });
+
+  it('shippingHeight throws when assigned an instance of incompatible object.', () => {
+    const actual = new Product();
+
+    assert.throws(() => {
+      actual.shippingHeight = new Object();
+    }, Error);
+  });
+
+  it('shippingHeight accepts when assigned an instance of ShippingDimension.', () => {
+    const actual = new Product();
+    actual.shippingHeight = new ShippingDimension(250, 'cm');
+
+    assert.instanceOf(actual.shippingHeight, ShippingDimension);
+  });
+
+  it('tax throws when assigned an instance of incompatible object.', () => {
+    const actual = new Product();
+
+    assert.throws(() => {
+      actual.tax = new Object();
+    }, Error);
+  });
+
+  it('tax accepts when assigned an instance of ProductTax.', () => {
+    const actual = new Product();
+    actual.tax = new ProductTax();
+
+    assert.instanceOf(actual.tax, ProductTax);
+  });
 });
